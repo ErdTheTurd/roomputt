@@ -3,197 +3,245 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Roomputt is an upcoming Apple Vision Pro app: mini golf played in your real room, with holes built around your own furniture. In development.">
+  <title>Roomputt — mini golf on your living-room floor</title>
+  <meta name="description" content="Roomputt is an in-development Apple Vision Pro app. Mini golf on your living-room floor: the couch is a bank, the coffee table is the obstacle, and strokes sit on a scorecard.">
+  <meta name="theme-color" content="#e7ecea">
   <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#e6f2ea">
-  <title>Roomputt — Mini golf in your room</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="wrap header-inner">
-      <div class="wordmark">
-        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-          <rect width="32" height="32" rx="10" fill="#1f7a4a"/>
-          <circle cx="12" cy="21" r="4.2" fill="#f4f7f2"/>
-          <path d="M19.5 22.5 V9" stroke="#f4f7f2" stroke-width="1.7" stroke-linecap="round"/>
-          <path d="M19.5 9.2 L27 12.4 L19.5 15.6 Z" fill="#f4f7f2"/>
-        </svg>
-        <span>Roomputt</span>
-      </div>
-      <nav aria-label="Sections">
-        <ul>
-          <li><a href="#how-it-works">How it works</a></li>
-          <li><a href="#planned">Planned</a></li>
-          <li><a href="#coming-soon">Coming soon</a></li>
-          <li><a href="#privacy">Privacy</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top">
+        <img src="favicon.svg" width="28" height="28" alt="">
+        Roomputt
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#holes">Holes</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main id="main">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">In development</p>
-        <h1 id="hero-title">Roomputt</h1>
-        <p class="pitch">Mini golf played in your real room, with holes built around your own furniture.</p>
-      </div>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap">
+        <p class="wordmark">Roomputt</p>
+        <h1 id="hero-title">The couch is a bank. The coffee table is in the way.</h1>
+        <p class="lede">Mini golf on the floor of your living room. You place a tee and a cup, then pinch and pull back to putt.</p>
+        <p class="status">Coming soon to Apple Vision Pro. In development, not released.</p>
 
-      <figure class="glass diorama">
-        <svg viewBox="0 0 640 470" width="640" height="470" aria-hidden="true" focusable="false">
-          <defs>
-            <linearGradient id="floor" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#efd0a6"/>
-              <stop offset="1" stop-color="#c99562"/>
-            </linearGradient>
-            <pattern id="planks" width="56" height="20" patternUnits="userSpaceOnUse">
-              <path d="M0 19.5 H56" stroke="#a87b49" stroke-opacity="0.45" stroke-width="1"/>
-            </pattern>
-            <radialGradient id="daylight" cx="28%" cy="18%" r="75%">
-              <stop offset="0" stop-color="#ffffff" stop-opacity="0.38"/>
-              <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-            </radialGradient>
-            <radialGradient id="ball" cx="35%" cy="32%" r="70%">
-              <stop offset="0" stop-color="#ffffff"/>
-              <stop offset="1" stop-color="#d5ddd8"/>
-            </radialGradient>
-            <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
-              <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#3a2918" flood-opacity="0.18"/>
-            </filter>
-          </defs>
+        <figure>
+          <div class="plate">
+          <div class="plate-bar">
+            <strong>Living room</strong>
+            <span>Concept mockup</span>
+          </div>
+          <div class="stage">
+            <svg viewBox="0 0 920 480" width="920" height="480" aria-hidden="true" focusable="false">
+              <rect width="920" height="480" fill="#f6f3ee"/>
+              <polygon points="16,452 64,200 64,28 26,72" fill="#e6e0d6" stroke="#1a2a27" stroke-opacity="0.28" stroke-width="1.2"/>
+              <rect x="64" y="28" width="792" height="172" fill="#f3efe8" stroke="#1a2a27" stroke-opacity="0.28" stroke-width="1.2"/>
+              <rect x="64" y="186" width="792" height="14" fill="#e3d9cc"/>
+              <rect x="108" y="52" width="138" height="96" fill="#ddd4c8" stroke="#1a2a27" stroke-opacity="0.28"/>
+              <rect x="116" y="60" width="122" height="80" fill="#d5e4e0"/>
+              <path d="M177 60 v80 M116 100 h122" fill="none" stroke="#f6f3ee" stroke-width="3"/>
 
-          <rect x="24" y="18" width="592" height="434" rx="36" fill="#f6f1e8"/>
-          <rect x="44" y="40" width="552" height="390" rx="26" fill="url(#floor)"/>
-          <rect x="44" y="40" width="552" height="390" rx="26" fill="url(#planks)"/>
-          <rect x="44" y="40" width="552" height="390" rx="26" fill="url(#daylight)"/>
+              <polygon points="16,452 904,436 856,200 64,200" fill="#e8d2b0"/>
+              <g fill="none" stroke="#c4a57c" stroke-opacity="0.7" stroke-width="1">
+                <line x1="57.1" y1="236.0" x2="862.9" y2="233.7"/>
+                <line x1="50.3" y1="272.0" x2="869.7" y2="267.4"/>
+                <line x1="43.4" y1="308.0" x2="876.6" y2="301.1"/>
+                <line x1="36.6" y1="344.0" x2="883.4" y2="334.9"/>
+                <line x1="29.7" y1="380.0" x2="890.3" y2="368.6"/>
+                <line x1="22.9" y1="416.0" x2="897.1" y2="402.3"/>
+              </g>
 
-          <g filter="url(#shadow)">
-            <rect x="58" y="196" width="54" height="146" rx="8" fill="#6d4c34"/>
-            <rect x="66" y="210" width="38" height="7" rx="2" fill="#ead7b8"/>
-            <rect x="66" y="224" width="38" height="7" rx="2" fill="#f3e2c4"/>
-            <rect x="66" y="238" width="38" height="7" rx="2" fill="#c4553a"/>
-            <rect x="66" y="252" width="38" height="7" rx="2" fill="#ead7b8"/>
-            <rect x="66" y="276" width="38" height="7" rx="2" fill="#d7c4a4"/>
-            <rect x="66" y="290" width="38" height="7" rx="2" fill="#8e5a3c"/>
-            <rect x="66" y="304" width="38" height="7" rx="2" fill="#f3e2c4"/>
-          </g>
+              <polygon points="300,292 640,284 668,392 276,404" fill="#efe3d2" stroke="#1a2a27" stroke-opacity="0.22"/>
+              <polygon points="318,310 622,303 644,376 296,386" fill="none" stroke="#d9c7ae" stroke-width="1.4"/>
 
-          <g filter="url(#shadow)">
-            <rect x="64" y="54" width="292" height="80" rx="20" fill="#3e534a"/>
-            <rect x="76" y="64" width="82" height="60" rx="14" fill="#557066"/>
-            <rect x="166" y="64" width="82" height="60" rx="14" fill="#5d7a6e"/>
-            <rect x="256" y="64" width="86" height="60" rx="14" fill="#557066"/>
-          </g>
+              <g id="sofa">
+                <rect x="186" y="168" width="22" height="78" rx="4" fill="#1e463c"/>
+                <rect x="454" y="168" width="22" height="78" rx="4" fill="#1e463c"/>
+                <rect x="196" y="132" width="270" height="46" rx="7" fill="#24564c"/>
+                <rect x="204" y="140" width="78" height="28" rx="4" fill="#2f6b5f"/>
+                <rect x="288" y="140" width="78" height="28" rx="4" fill="#357564"/>
+                <rect x="372" y="140" width="78" height="28" rx="4" fill="#2f6b5f"/>
+                <rect x="200" y="174" width="262" height="64" rx="6" fill="#2c6456"/>
+                <rect x="210" y="184" width="76" height="44" rx="4" fill="#3d7d6b"/>
+                <rect x="292" y="184" width="76" height="44" rx="4" fill="#468674"/>
+                <rect x="374" y="184" width="76" height="44" rx="4" fill="#3d7d6b"/>
+                <rect x="430" y="146" width="28" height="22" rx="3" fill="#c4a574"/>
+                <rect x="208" y="236" width="8" height="12" fill="#3a2c22"/>
+                <rect x="448" y="236" width="8" height="12" fill="#3a2c22"/>
+              </g>
 
-          <g filter="url(#shadow)">
-            <rect x="468" y="56" width="118" height="126" rx="26" fill="#e6d3b8"/>
-            <rect x="480" y="70" width="94" height="86" rx="20" fill="#f4e7d4"/>
-            <rect x="492" y="148" width="70" height="16" rx="8" fill="#d9c2a4"/>
-          </g>
+              <g id="table">
+                <polygon points="352,312 548,304 572,332 376,342" fill="#f0d8b4" stroke="#1a2a27" stroke-opacity="0.35" stroke-linejoin="round"/>
+                <polygon points="376,342 572,332 572,352 376,362" fill="#c4a574" stroke="#1a2a27" stroke-opacity="0.35" stroke-linejoin="round"/>
+                <polygon points="352,312 376,342 376,362 352,332" fill="#b08b58" stroke="#1a2a27" stroke-opacity="0.35" stroke-linejoin="round"/>
+                <line x1="390" y1="360" x2="384" y2="384" stroke="#8d6844" stroke-width="3" stroke-linecap="round"/>
+                <line x1="548" y1="350" x2="556" y2="374" stroke="#8d6844" stroke-width="3" stroke-linecap="round"/>
+                <polygon points="410,322 468,317 478,328 420,333" fill="#f7f1e6" stroke="#1a2a27" stroke-opacity="0.25"/>
+              </g>
 
-          <g filter="url(#shadow)">
-            <rect x="214" y="196" width="196" height="116" rx="18" fill="#7a5230"/>
-            <rect x="226" y="208" width="172" height="92" rx="12" fill="#c99562"/>
-            <rect x="238" y="220" width="72" height="48" rx="6" fill="#e7c79a" opacity="0.55"/>
-          </g>
+              <g id="plant" stroke="#1a2a27" stroke-opacity="0.35" stroke-linejoin="round">
+                <rect x="748" y="326" width="30" height="16" rx="2" fill="#a8653c"/>
+                <path d="M756 326 L752 274 L766 326 Z" fill="#24563c"/>
+                <path d="M764 326 L766 258 L780 326 Z" fill="#3d8a5c"/>
+                <path d="M758 326 L762 262 L774 326 Z" fill="#2f6b4a"/>
+              </g>
 
-          <g filter="url(#shadow)">
-            <ellipse cx="528" cy="352" rx="26" ry="12" fill="#b87443"/>
-            <circle cx="528" cy="328" r="28" fill="#2c6b44"/>
-            <circle cx="512" cy="334" r="16" fill="#3d8a5a"/>
-            <circle cx="542" cy="332" r="13" fill="#1f5536"/>
-          </g>
+              <g id="lane" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M158 430 C152 368 142 322 188 292 L508 254" stroke="#f7f3ea" stroke-width="8"/>
+                <path d="M158 430 C152 368 142 322 188 292 L508 254" stroke="#1e3a36" stroke-width="2.5"/>
+              </g>
 
-          <ellipse cx="172" cy="386" rx="30" ry="16" fill="#1f7a4a"/>
-          <ellipse cx="404" cy="124" rx="36" ry="22" fill="#1f7a4a"/>
+              <g id="tee">
+                <ellipse cx="158" cy="432" rx="22" ry="8" fill="#24564c"/>
+                <circle cx="158" cy="432" r="3.5" fill="#f7f4ee" stroke="#1a2a27" stroke-width="1"/>
+              </g>
 
-          <path d="M172 368 C172 300 146 246 164 206 C180 168 292 176 386 140" fill="none" stroke="#f7f3ec" stroke-width="16" stroke-linecap="round"/>
-          <path d="M172 368 C172 300 146 246 164 206 C180 168 292 176 386 140" fill="none" stroke="#14663c" stroke-width="7" stroke-linecap="round"/>
+              <g id="cup">
+                <ellipse cx="520" cy="252" rx="18" ry="7" fill="#1e463c"/>
+                <ellipse cx="520" cy="252" rx="7" ry="3" fill="#14241f"/>
+                <line x1="520" y1="252" x2="520" y2="208" stroke="#f6f3ee" stroke-width="1.7" stroke-linecap="round"/>
+                <path d="M520 208 l16 7 -16 7 z" fill="#9c3b32"/>
+              </g>
 
-          <circle cx="172" cy="386" r="5" fill="#f7f3ec"/>
-          <circle cx="404" cy="124" r="11" fill="#24180f"/>
-          <circle cx="404" cy="124" r="16" fill="none" stroke="#f4f1ea" stroke-width="3"/>
-          <path d="M404 124 V70" stroke="#f7f3ec" stroke-width="2.4" stroke-linecap="round"/>
-          <path d="M404 72 L404 96 L372 84 Z" fill="#c4553a"/>
+              <g id="ball">
+                <ellipse cx="162" cy="372" rx="8" ry="3" fill="#1a2a27" opacity="0.13"/>
+                <circle cx="160" cy="366" r="8" fill="#f7f4ee" stroke="#1a2a27" stroke-width="1.15"/>
+                <circle cx="157" cy="363" r="2.2" fill="#ffffff"/>
+              </g>
+            </svg>
 
-          <circle cx="166" cy="292" r="11" fill="url(#ball)"/>
-          <circle cx="162" cy="288" r="3" fill="#ffffff" opacity="0.9"/>
-        </svg>
-        <figcaption>Illustration of a living room used as a mini-golf hole: a tee, a path around the furniture, and a cup. Not a screenshot.</figcaption>
-      </figure>
-    </section>
-
-    <section class="section wrap" id="how-it-works" aria-labelledby="how-title">
-      <div class="section-head">
-        <h2 id="how-title">How it works</h2>
-        <p>A hole made from the room you are in.</p>
-      </div>
-      <ol class="steps">
-        <li class="glass">
-          <span class="step-index" aria-hidden="true">1</span>
-          <h3>Scan your room</h3>
-          <p>The floor, walls, and furniture become the course.</p>
-        </li>
-        <li class="glass">
-          <span class="step-index" aria-hidden="true">2</span>
-          <h3>Place the tee and the cup</h3>
-          <p>Set them around the furniture already in the room.</p>
-        </li>
-        <li class="glass">
-          <span class="step-index" aria-hidden="true">3</span>
-          <h3>Aim and putt</h3>
-          <p>Aim and putt with a pinch gesture.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="section wrap" id="planned" aria-labelledby="planned-title">
-      <div class="section-head">
-        <h2 id="planned-title">Planned for launch</h2>
-        <p>Roomputt has not shipped. These features are planned for launch. They are not available yet.</p>
-      </div>
-      <ul class="features">
-        <li class="glass">
-          <p class="tag">Planned</p>
-          <h3>Holes built around your furniture</h3>
-          <p>The floor, walls, and furniture in your room become the hole.</p>
-        </li>
-        <li class="glass">
-          <p class="tag">Planned</p>
-          <h3>A tee and a cup you place</h3>
-          <p>Place the tee and the cup around your furniture.</p>
-        </li>
-        <li class="glass">
-          <p class="tag">Planned</p>
-          <h3>Pinch to aim and putt</h3>
-          <p>Aim and putt with a pinch gesture.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section wrap" id="coming-soon" aria-labelledby="soon-title">
-      <div class="glass soon-card">
-        <h2 id="soon-title">Coming soon to Apple Vision Pro</h2>
-        <p>Roomputt is in development and has not been released.</p>
+            <div class="window">
+              <div class="grabber" aria-hidden="true"></div>
+              <p class="win-kicker">Scorecard</p>
+              <p class="win-hole">Off the couch</p>
+              <p class="win-score"><span>2</span> strokes</p>
+            </div>
+          </div>
+          </div>
+          <figcaption class="caption">Concept mockup. The path runs along the couch and bends past the coffee table. Sample stroke count. Not a screenshot.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="section wrap" id="privacy" aria-labelledby="privacy-title">
-      <div class="glass privacy-card">
-        <h2 id="privacy-title">Privacy</h2>
-        <p>Roomputt is designed to work offline.</p>
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="how-title">What it does</h2>
+          <p>Planned for launch. Roomputt has not shipped.</p>
+        </div>
+        <ul class="feature-list">
+          <li>
+            <h3>The room</h3>
+            <p>Look around your living room. The floor, the walls, and the furniture stay where they are and become the hole.</p>
+          </li>
+          <li>
+            <h3>The couch</h3>
+            <p>The couch becomes a bank shot. The ball can come off it and keep rolling.</p>
+          </li>
+          <li>
+            <h3>The coffee table</h3>
+            <p>The coffee table is the obstacle. The path bends around it.</p>
+          </li>
+          <li>
+            <h3>Tee and cup</h3>
+            <p>You place the tee and the cup on your floor.</p>
+          </li>
+          <li>
+            <h3>The putt</h3>
+            <p>Aim, pinch, and pull back to putt.</p>
+          </li>
+          <li>
+            <h3>The scorecard</h3>
+            <p>Each hole keeps a stroke count.</p>
+          </li>
+        </ul>
       </div>
+    </section>
+
+    <section class="section" id="holes" aria-labelledby="holes-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="holes-title">Holes and strokes</h2>
+          <p>You pick the hole. The scorecard counts the strokes for each one.</p>
+        </div>
+        <figure>
+          <div class="plate plate-fit">
+          <div class="plate-bar">
+            <strong>Hole list</strong>
+            <span>Concept mockup</span>
+          </div>
+          <div class="window-row">
+            <div class="window">
+              <div class="grabber" aria-hidden="true"></div>
+              <p class="win-kicker">Holes</p>
+              <ol class="holes">
+                <li>
+                  <span class="num">1</span>
+                  <span class="name">Off the couch</span>
+                </li>
+                <li class="is-current">
+                  <span class="num">2</span>
+                  <span class="name">Around the table</span>
+                  <span class="sel">Selected</span>
+                </li>
+                <li>
+                  <span class="num">3</span>
+                  <span class="name">Bank to the cup</span>
+                </li>
+              </ol>
+            </div>
+            <div class="window">
+              <div class="grabber" aria-hidden="true"></div>
+              <p class="win-kicker">Scorecard</p>
+              <table class="score">
+                <thead>
+                  <tr>
+                    <th scope="col">Hole</th>
+                    <th scope="col">Strokes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Off the couch</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Around the table</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Bank to the cup</td>
+                    <td>—</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </div>
+          <figcaption class="caption">Concept mockup, with sample hole names and stroke counts. Not a screenshot.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="privacy wrap" id="privacy" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy</h2>
+      <p>Roomputt is designed to work offline.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <p>Roomputt</p>
-      <p>© 2026 Edward Dunn</p>
+    <div class="wrap">
+      <p>© 2026 Edward Dunn. Roomputt for Apple Vision Pro.</p>
     </div>
   </footer>
 </body>
